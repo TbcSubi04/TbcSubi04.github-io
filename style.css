@@ -53,14 +53,16 @@ body {
     
 
         .footer {
-         position: fixed;
-          left: 0;
-           bottom:0;
-             width: 100%;
-             background-color:rgb(62, 57, 50);
-          color:black;
-         text-align: center;
-       }
+           background-color:rgb(6, 94, 94);;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    
+      
           
         body{
             background-color: blanchedalmond;
@@ -129,5 +131,6 @@ body {
           #container{
             border: 1px solid black;
             width: 350px;
+            margin: 0 auto; /* This centers the table horizontally */
           }
           
