@@ -28,7 +28,7 @@ body {
         }
         nav ul li {
             display: inline;
-            margin-right: 160px; /* This increases the space between the items in the header */
+            margin-right: 60px; /* This increases the space between the items in the header */
         }
         nav ul li a {
             text-decoration: none;
@@ -129,4 +129,8 @@ body {
           #container{
             border: 1px solid black;
             width: 350px;
+          }
+          #last
+          nav ol{
+            display: inline;
           }
