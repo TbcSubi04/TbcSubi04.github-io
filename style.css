@@ -51,20 +51,7 @@ body {
           text-align: center;
       }
     
-
-        .footer {
-           background-color:rgb(6, 94, 94);;
-            color: #333;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    
-      
-          
-        body{
+       body{
             background-color: blanchedalmond;
           }
 
@@ -134,3 +121,23 @@ body {
             margin: 0 auto; /* This centers the table horizontally */
           }
           
+          .down{
+            background-color:rgb(6, 94, 94);;
+             color:white;
+             padding: 10px;
+             position: fixed;
+             bottom:0;
+             width: 100%;
+             display: flex;
+             
+         }
+        
+         .col img{
+           width: 100px;
+           height: auto;
+           }
+           
+         
+        
+
+        
