@@ -22,39 +22,79 @@
   </nav>
         <hr width="70%", size="4px" color="">
         
-        <div id="container">
-       <table align ="center">
-    <form action="contact_receipt.html" name="" method="get"></form>
+<script>
+ document.getElementById('contactforms'); {
+    var name = document.forms["name"].value;
+    var surname = document.forms["surname"].value;
+    var email = document.forms["email"].value;
+    var password = document.forms["password"].value;
+    var reenterPassword = document.forms["reenterPassword"].value;
+    var phoneNumber = document.forms["phoneNumber"].value;
+    
+    if (name == "" || surname == "" || email == "" || password == "" || reenterPassword == "" || phoneNumber == "")
+     alert("All fields must be filled out");
+    return false;
+    }
+    
+    if (password != reenterPassword) {
+     alert("Passwords do not match");
+    return false;
+  }
+    
+ return true;
+ </script>
+    </head>
+    <body>
+    <div id="container">
+    <form name="contactForm" action="contact_receipt.html" onsubmit="return validateForm()" method="get">
+    <table>
     <tr>
-        <th>Name</th>
-        <td><input type="text" name=""></td>
+      <th>Name</th>
+      <td><input type="text" name="name"></td>
     </tr>
     <tr>
-        <th>Surname</th>
-        <th><input type="text" name=""></th>
+      <th>Surname</th>
+       <td><input type="text" name="surname"></td>
     </tr>
     <tr>
-        <th>Phone Number</th>
-        <td><input type="text" maxlength="15"></td>
+      <th>Email</th>
+      <td><input type="email" name="email"></td>
     </tr>
     <tr>
-        <th>Email</th>
-        <td><input type="email" name=""></td>
+      <th>Password</th>
+      <td><input type="password" name="password"></td>
+     </tr>
+    <tr>
+      <th>Re-enter Password</th>
+      <td><input type="password" name="reenterPassword"></td>
     </tr>
     <tr>
-    <td colspan="10" align="center">
-         <button>Submit</button>
-         <button>Reset</button>
-    </td>
+      <th>Phone Number</th>
+      <td><input type="text" name="phoneNumber" maxlength="15"></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button> </td>
     </tr>
 </table>
 </div>
-</center>
-
-<div class="footer">
-<a href="https://www.instagram.com/"">Instagram</a>
-<a href="https://mail.google.com/mail/u/0/">MAil</a>
-<a href="https://twitter.com/i/flow/login">Twitter</a>
-</div> 
+<footer class="down">
+    <div class="col">
+        <img src="logo.jpg" alt="footer">
+        <h2>Contact</h2>
+        <p><strong>Address:</strong>Kumaripati,Jawalakhel <br> Pipalbhot,Boudha <br> Durbarmarg,Kathmandu</p>
+        <p><strong>Hours:</strong>10:00AM- 7:00PM, Sunday-Friday</p>
+    
+      <h2>Follow us</h2>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-pinterest"></i>
+  </div>
+</footer>
 </body>
 </html>

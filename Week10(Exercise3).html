@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Task 3</title>
+  </head>
+ <body>
+     <script>
+         // question number 3
+         var maths= parseInt(prompt("Maths:"));   //gives value in int
+         var science=parseInt(prompt("science:"));
+         var arts=parseInt(prompt("arts:"));
+         var computer=parseInt(prompt("computer:"));
+         var health=parseInt(prompt("Health:"));
+         var total=((maths+science+arts+computer+health)/500)*100;
+         if(total>=80 && total<=100){
+         document.write("Distinction")
+         }
+
+         else if(total>=60 && total<80){
+         document.write("First Division")
+        }
+
+         else if(total>=50 && total<60){
+         document.write("Second Division")
+        }
+
+         else if(total>=40 && total<50){
+        document.write("Third Division")
+         }
+
+         else{
+         document.write("Fail")
+         }
+      </script>
+ </body>
+</html>
